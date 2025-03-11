@@ -1,0 +1,16 @@
+h2{
+    background-color: yellow;
+    color: blue;
+    font-size: 72px;
+    text-align: center;
+}
+body{
+    color : chocolate;
+    font-size: 24px;
+    text-align: left;
+}
+form{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}

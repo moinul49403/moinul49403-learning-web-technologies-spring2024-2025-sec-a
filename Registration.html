@@ -4,56 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel ="stylesheet" href="Registration.css">
 </head>
 <body>
     <h2>Online Registration Form</h2>
     
     <form>
-        <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname" required><br><br>
+        <table border="5">
+            <tr>
+                <td>
+                    <label for="firstname">First Name:</label>
         
-        <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" required><br><br>        
+                </td>
+                <td>
+                    <input type="text" id="firstname" name="firstname" required><br><br>        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastname">Last Name:</label>    
+                </td>
+                <td>
+                    <input type="text" id="lastname" name="lastname" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ID">ID:</label>
+                </td>
+                <td>
+                    <input type="number" id="ID" name="ID" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Date of Birth:</label>
+                </td>
+                <td>
+                    <input type="date" id="dob" name="dob"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male"> <label for="male">Male</label> 
+                
+                    <input type="radio" id="male" name="gender" value="Male"> <label for="female">Female</label> 
+                
+                    <input type="radio" id="male" name="gender" value="Male"> <label for="other">Other</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Skills:</label><br>
+                </td>
+                <td>
+                    <input type="checkbox" id="C++" name="Skill" value="C++"> <label for="C++">C++</label>
 
-        <label for="ID">ID:</label>
-        <input type="number" id="ID" name="ID" required><br><br>
+                    <input type="checkbox" id="JAVA" name="Skill" value="JAVA"> <label for="JAVA">JAVA</label>
+                
+                    <input type="checkbox" id="PYTHON" name="Skill" value="PYTHON"> <label for="PYTHON">PYTHON</label><br> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dept">Department:</label>
+                </td>
+                <td>
+                    <select id="dept" name="dept">
+                        <option value="CSE">CSE</option>
+                        <option value="CS">CS</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Other">Other</option>
+                    </select><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="profilePic">Upload Profile Picture:</label>
+                </td>
+                <td>
+                    <input type="file" id="profilePic" name="profilePic"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address:</label><br>
+                </td>
+                <td>
+                    <textarea id="address" name="address" rows="6" cols="20"></textarea><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Button">
+                </td>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+                <td>
+                    <input type="reset" value="Clear Form">
+                </td>
+            </tr>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob"><br><br>
-
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="Male"> <label for="male">Male</label>
-        <input type="radio" id="male" name="gender" value="Male"> <label for="female">Female</label>
-        <input type="radio" id="male" name="gender" value="Male"> <label for="other">Other</label><br><br>
-
-        <label>Skills:</label><br>
-        <input type="checkbox" id="C++" name="Skill" value="C++"> <label for="C++">C++</label>
-        <input type="checkbox" id="JAVA" name="Skill" value="JAVA"> <label for="JAVA">JAVA</label>
-        <input type="checkbox" id="PYTHON" name="Skill" value="PYTHON"> <label for="PYTHON">PYTHON</label><br><br>
-
-        <label for="dept">Department:</label>
-        <select id="dept" name="dept">
-            <option value="CSE">CSE</option>
-            <option value="CS">CS</option>
-            <option value="Cyber Security">Cyber Security</option>
-            <option value="Other">Other</option>
-        </select><br><br>
-
-        <label for="profilePic">Upload Profile Picture:</label>
-        <input type="file" id="profilePic" name="profilePic"><br><br>
-
-        <label for="address">Address:</label><br>
-        <textarea id="address" name="address" rows="6" cols="50"></textarea><br><br>
-
-        <input type="button" value="Button">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Clear Form">
+        </table>    
     </form>   
 
 </body>
